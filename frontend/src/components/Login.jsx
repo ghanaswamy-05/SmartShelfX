@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Signup from "./Signup"; // Adjust path if needed
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showSignup, setShowSignup] = useState(false);
 
+const navigate = useNavigate();
   const handleLogin = async () => {
     try {
       const res = await axios.post("http://localhost:8080/api/auth/login", {
@@ -14,6 +15,7 @@ const Login = () => {
         password,
       });
       alert(res.data);
+      navigate("/products"); // 👈 Redirect to ProductManager
     } catch (err) {
       alert("Login failed");
     }
