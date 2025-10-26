@@ -1,0 +1,74 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.intro-container {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.intro-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro-title {
+  font-size: 40px;
+}
+
+.intro-description {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.intro-subtext {
+  font-size: 16px;
+  color: #555;
+}
+
+.login-button {
+  padding: 12px 24px;
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

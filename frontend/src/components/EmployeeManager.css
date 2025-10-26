@@ -1,0 +1,106 @@
+.employee-manager {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employee-manager h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.employee-manager form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.employee-manager input {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.employee-manager .form-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.employee-manager button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.employee-manager button:hover {
+  background-color: #2980b9;
+}
+
+.employee-manager .cancel {
+  background-color: #e74c3c;
+}
+
+.employee-manager .cancel:hover {
+  background-color: #c0392b;
+}
+
+.employee-manager ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-manager li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.employee-manager li strong {
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.employee-manager li button {
+  margin-left: 10px;
+}
+
+/* Optional: Responsive tweaks */
+@media (max-width: 600px) {
+  .employee-manager form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .employee-manager input {
+    width: 100%;
+  }
+
+  .employee-manager li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-manager li button {
+    margin-top: 8px;
+  }
+}
